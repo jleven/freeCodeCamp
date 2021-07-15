@@ -178,6 +178,7 @@ class ShowVideo extends Component<ShowVideoProps, ShowVideoState> {
           block,
           translationPending,
           videoId,
+          videoLocaleIds,
           bilibiliIds,
           question: { text, answers, solution }
         }
@@ -229,6 +230,7 @@ class ShowVideo extends Component<ShowVideoProps, ShowVideoState> {
                     title={title}
                     videoId={videoId}
                     videoIsLoaded={this.state.videoIsLoaded}
+                    videoLocaleIds={videoLocaleIds}
                   />
                 </div>
               </Col>
@@ -313,6 +315,11 @@ export const query = graphql`
   query VideoChallenge($slug: String!) {
     challengeNode(fields: { slug: { eq: $slug } }) {
       videoId
+      videoLocaleIds {
+        espanol
+        italian
+        portuguese
+      }
       bilibiliIds {
         aid
         bvid
