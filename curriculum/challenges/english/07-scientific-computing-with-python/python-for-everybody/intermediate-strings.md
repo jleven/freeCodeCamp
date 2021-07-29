@@ -4,9 +4,9 @@ title: Intermediate Strings
 challengeType: 11
 videoId: KgT_fYLXnyk
 videoLocaleIds:
-  espanol: ''
-  italian: ''
-  portuguese: ''
+  espanol: 7jjoyy7_RCk
+  italian: 44LA7i_f4ug
+  portuguese: dQw4w9WgXcQ
 dashedName: intermediate-strings
 ---
 
